@@ -1,0 +1,9 @@
+git init : for initialization of repo + it will help us for converting unversion project to version project so that if we miss any data we can get it back
+git remote add origin "https://bnxajcjncijdsncj" : this is to add the orgin to the existing project
+git status : this is help us to check the tracked files and untracked files only in the working directory
+git add : this will help us for adding the files 
+  a. if we add -A : it will add all the files
+  b. if we mentioned specific path with file it will add only that file to local repo
+git commit -m "adding createUser method" : this is help us to commit the code from staging area to local repo 
+ a. note : here we don't have any selection to move the code, we have to move the entire files as a batch
+git push -u orgin master : this is help us to move the code from local repo to remote repo
