@@ -9,13 +9,14 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 public class TestNgSample1 {
-  static BrowserSetUpUtil browserSetUpUtil=new BrowserSetUpUtil();
+    static BrowserSetUpUtil browserSetUpUtil = new BrowserSetUpUtil();
     static WebDriver driver = browserSetUpUtil.driver;
-@Test
+
+    @Test
     public static void openBrowser() throws IOException {
-    driver.get("https://www.qspiders.com/");
-    browserSetUpUtil.closeBrowser();
-    String batCommand = "cmd /c start C:\\Users\\User\\OneDrive\\Desktop\\curl.bat";
-    Runtime.getRuntime().exec(batCommand);
+        driver.get("https://www.qspiders.com/");
+//    browserSetUpUtil.closeBrowser();
+//    String batCommand = "cmd /c start C:\\Users\\User\\OneDrive\\Desktop\\curl.bat";
+//    Runtime.getRuntime().exec(batCommand);
     }
 }

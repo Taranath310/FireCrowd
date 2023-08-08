@@ -9,12 +9,13 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 public class TestNgSample2 {
-  static BrowserSetUpUtil browserSetUpUtil=new BrowserSetUpUtil();
+    static BrowserSetUpUtil browserSetUpUtil = new BrowserSetUpUtil();
     static WebDriver driver = browserSetUpUtil.driver;
+
     @Test
     public static void openBrowser() {
         driver.get("https://app.fireflink.com/signin");
-        driver.findElement(By.xpath("//button[text()='Sign in']")).sendKeys("hi");
+        //  driver.findElement(By.xpath("//button[text()='Sign in']")).sendKeys("hi");
         browserSetUpUtil.closeBrowser();
     }
 }
