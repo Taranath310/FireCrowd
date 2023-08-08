@@ -17,8 +17,19 @@ public class CreateUserE2E {
         usersPage.createUser();
         usersPage.createUser("tara","7892881061","projectOwner");
         usersPage.createUser("taranath","7892881061","projectOwner");
-
+        add();
                
         
+    }
+    static void add() {
+        WebDriver driver=new FirefoxDriver();
+        driver.get("https://www.mangomist.com/contact");
+        UsersPage usersPage=new UsersPage(driver);
+        usersPage.createUser();
+        usersPage.createUser("tara","7892881061","projectOwner");
+        usersPage.createUser("taranath","7892881061","projectOwner");
+
+
+
     }
 }
