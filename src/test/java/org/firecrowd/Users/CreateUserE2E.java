@@ -16,6 +16,7 @@ public class CreateUserE2E {
         UsersPage usersPage=new UsersPage(driver);
         usersPage.createUser();
         usersPage.createUser("tara","7892881061","projectOwner");
+        usersPage.createUser("taranath","7892881061","projectOwner");
 
                
         
